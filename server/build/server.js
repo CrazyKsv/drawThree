@@ -38,7 +38,7 @@ app.use(flash());
 app.use(function (req, res, next) {
   console.log('starting server ..');
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Origin', 'http://drawThree.herokuapp.com:3000');
   // res.setHeader('Access-Control-Allow-Origin', 'https://drawsquad.herokuapp.com');
 
   // Request methods you wish to allow

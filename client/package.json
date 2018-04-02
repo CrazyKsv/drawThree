@@ -8,11 +8,16 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "crypto": "^1.0.1",
     "dat.gui": "^0.7.1",
     "react-app-rewired": "^1.5.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "http": "0.0.0",
+    "https": "^1.0.0",
     "husky": "^0.14.3",
-
+    "lint-staged": "^7.0.0",
     "material-ui": "^0.20.0",
     "material-ui-icons": "^1.0.0-beta.36",
     "mobx": "^3.3.0",
@@ -24,7 +29,7 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.0",
     "path": "^0.12.7",
-
+    "prettier": "^1.11.1",
     "react": "^15.5.3",
     "react-app-rewire-mobx": "^1.0.7",
     "react-dat-gui": "^1.0.2",
@@ -39,8 +44,14 @@
     "three-orbit-controls": "^82.1.0",
     "three.interaction": "0.0.9"
   },
-
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
   "scripts": {
+    "precommit": "lint-staged",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom"

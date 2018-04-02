@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^3.5.1"
-
+    "concurrently": "^3.5.1",
+  "yarn": "^1.5.1"
   },
 
   "scripts": {

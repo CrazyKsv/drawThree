@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "babel . --ignore node_modules,build --out-dir build",
-    "start": "node -r babel-register server.js",
+    "start": "npm start",
     "start:prod": "npm start"
   }
 }

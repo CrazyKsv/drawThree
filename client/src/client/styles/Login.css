@@ -1,0 +1,132 @@
+.login-container {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-google {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: center;
+  margin-left: 20px;
+  margin-right: auto;
+  height: 30px;
+  width: 70px;
+  background-image: url('../images/logo.png');
+  margin-bottom: 20px;
+}
+
+.g-signin2 {
+  margin-left: 10px;
+}
+
+.or-form {
+  display: flex;
+  align-items: center;
+  color: grey;
+}
+
+.seperator {
+  height: 2px;
+  width: 15vw;
+  background-color: grey;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='text'] {
+  border: 1px solid #999;
+  width: 25vw;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 7px;
+  font-size: 12px;
+}
+
+input[type='password'] {
+  border: 1px solid #999;
+  width: 25vw;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 7px;
+  font-size: 12px;
+}
+
+.login-text {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.login-title-bar {
+  display: flex;
+  align-self: flex-end;
+}
+
+button {
+  margin-top: 15px;
+  width: 20vw;
+  background: rgba(255,255,255,0.2);
+  font-size: 20px;
+  font-weight: '700';
+  color: #fff;
+  padding: 7px;
+}
+
+button:hover {
+  margin-top: 15px;
+  width: 20vw;
+  background: rgba(255,255,255,0.4);
+  font-size: 20px;
+  font-weight: '700';
+  color: #fff;
+  padding: 7px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-text {
+  color: #6bf;
+  margin-left: 10px;
+}
+
+.bottom-text:hover {
+  color: #6bf;
+  margin-left: 10px;
+  background: rgba(255,255,255,0.4);
+}
+
+.margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mid-margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.large-margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

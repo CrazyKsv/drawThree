@@ -1,0 +1,16 @@
+.top-left {
+  position: absolute;
+  left: 5px;
+  top: 70px;
+}
+
+.top-left-drop-down {
+  position: absolute;
+  left: 15px;
+  top: 100px;
+}
+
+.flex-default {
+  display: grid;
+  grid-template-columns: 9fr auto;
+}

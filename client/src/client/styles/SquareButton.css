@@ -1,0 +1,76 @@
+.square-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0.5px solid;
+}
+
+.square-button-text {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.square-button-text:hover {
+  color: rgb(0, 109, 240);
+}
+
+.blue-text {
+  color: rgb(0, 109, 240);
+}
+
+.small-padding {
+  padding: 5px;
+}
+
+.padding-right {
+  padding-right: 10px;
+}
+
+.square-button-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 7px;
+}
+
+#info-icon {
+  background-image: url('../icons/info.svg');
+}
+
+#info-icon:hover {
+  background-image: url('../icons/info-blue.svg');
+}
+
+#info-blue-icon {
+  background-image: url('../icons/info-blue.svg');
+}
+
+#add-icon {
+  background-image: url('../icons/add.svg');
+}
+
+#add-icon:hover {
+  background-image: url('../icons/add-blue.svg');
+}
+
+#add-blue-icon {
+  background-image: url('../icons/add-blue.svg');
+}
+
+#close-icon {
+  background-image: url('../icons/close.svg');
+}
+
+#close-icon:hover {
+  background-image: url('../icons/close-blue.svg');
+}
+
+#rockandroll-icon {
+  background-image: url('../icons/rock-and-roll.svg');
+}
+
+#rockandroll-blue-icon:hover {
+  background-image: url('../icons/rock-and-roll-blue.svg');
+}

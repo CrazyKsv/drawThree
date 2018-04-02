@@ -11,8 +11,10 @@
     "node": "6.11.1"
   },
   "scripts": {
-    "build": "babel . --ignore node_modules,build --out-dir build",
-    "start": "npm start",
-    "start:prod": "npm start"
+     "build": "concurrently \"cd client && npm run build\" \"cd server && npm run build\"",
+    "heroku-postbuild": "npm run build",
+    "install": "(cd client && npm install) && (cd server && npm install)",
+    "start": "concurrently \"cd client && PORT=3000 npm start\" \"cd server && PORT=3001 npm start\"",
+    "start:prod": "cd server && npm start:prod"
   }
 }

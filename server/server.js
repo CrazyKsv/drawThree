@@ -88,7 +88,7 @@ const PORT = 3001;
 //   else console.log("The magic happens on port: ", PORT);
 // });
 //
-http.createServer(app).listen(PORT, function(err) {
+http.createServer(app).listen(process.env.PORT || 3001, function(err) {
   if (err) console.log(err);
   else console.log("The magic happens on port: ", PORT);
   }

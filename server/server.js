@@ -9,14 +9,9 @@ var morgan = require('morgan');
 var flash = require('connect-flash');
 const fs = require('fs');
 var configDB = require('./config/database.js');
-
 var app = express();
 
-// get reference to the client build directory
-const staticFiles = express.static(path.join(__dirname, '../../client/build'));
 
-// pass the static files (react app) to the express app.
-app.use(staticFiles);
 
 // *** mongoose *** //
 mongoose.connect(configDB.url);
@@ -27,7 +22,7 @@ require('./config/passport')(passport);
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-// app.use(express.static(path.join(__dirname, '../public/')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(session({
     secret: 'draw squad not a squad',
     resave: true,
@@ -80,7 +75,7 @@ app.use(function(req, res, next) {
 // const https = require('https');
 const http = require('http');
 // const PORT = 80;
-const PORT = 3001;
+const PORT = 3000;
 
 // var privateKey = fs.readFileSync( 'drawsquad.herokuapp.key' );
 // var certificate = fs.readFileSync( 'drawsquad.herokuapp.crt' );

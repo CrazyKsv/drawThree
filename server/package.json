@@ -19,16 +19,15 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.0",
-    "path": "^0.12.7",
-    "concurrently": "^3.5.1"
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "babel-register": "^6.26.0",
     "nodemon": "^1.17.3"
   },
   "scripts": {
-   "build": "babel . --ignore node_modules,build --out-dir build",
-    "start": "node server.js",
+    "build": "babel . --ignore node_modules,build --out-dir build",
+    "start": "nodemon -r babel-register server.js",
     "start:prod": "node build/server.js"
   }
 }
